@@ -1,11 +1,12 @@
 # class Bob for the workshop Ruby
 class Bob
   def hey(message)
-    if said_nothing? message
+    case
+    when said_nothing?(message)
       'Fine. Be that way!'
-    elsif yelling? message
+    when yelling?(message)
       'Whoa, chill out!'
-    elsif question? message
+    when question?(message)
       'Sure.'
     else
       'Whatever.'
